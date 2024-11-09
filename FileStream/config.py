@@ -12,9 +12,9 @@ class Telegram:
     DATABASE_URL = str(env.get('DATABASE_URL','mongodb+srv://Sukuna:Sukuna123@cluster0.xya73s9.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'))
     UPDATES_CHANNEL = str(env.get('UPDATES_CHANNEL', "Anime_sub_society"))
     SESSION_NAME = str(env.get('SESSION_NAME', 'society_stream_bot'))
-    FORCE_SUB_ID = env.get('FORCE_SUB_ID', None)
+    FORCE_SUB_ID = env.get('FORCE_SUB_ID', '1002132950415 -1001930406310 -1002072642438')
     FORCE_SUB = env.get('FORCE_UPDATES_CHANNEL', True)
-    FORCE_SUB = True if str(FORCE_SUB).lower('-1002132950415 -1001930406310 -1002072642438') == "true" else False
+    FORCE_SUB = True if str(FORCE_SUB).lower('') == "true" else False
     SLEEP_THRESHOLD = int(env.get("SLEEP_THRESHOLD", "60"))
     FILE_PIC = env.get('FILE_PIC', "https://graph.org/file/5bb9935be0229adf98b73.jpg")
     START_PIC = env.get('START_PIC', "https://graph.org/file/290af25276fa34fa8f0aa.jpg")
