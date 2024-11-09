@@ -80,7 +80,7 @@ async def channel_receive_handler(bot: Client, message: Message):
             message_id=message.id,
             reply_markup=InlineKeyboardMarkup(
                 [[InlineKeyboardButton("Dᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ 📥",
-                                       url=f"https://t.me/{FileStream.username}?start=stream_{str(inserted_id)}")]])
+                                       url=f"https://anime-sub-society.blogspot.com/2024/11/redirecting-to-your-link-code-credit.html{FileStream.username}?start=stream_{str(inserted_id)}")]])
         )
 
     except FloodWait as w:
